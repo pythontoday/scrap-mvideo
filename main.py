@@ -4,19 +4,14 @@ import json
 
 def get_data():
 
-    cookies = {'your': 'cookie'}
-
+    cookies = {'your': 'cookies'}
     headers = {'your': 'headers'}
 
     params = {
         'categoryId': '195',
         'offset': '0',
         'limit': '24',
-        'filterParams': [
-            'WyJza2lka2EiLCIiLCJkYSJd',
-            'WyJ0b2xrby12LW5hbGljaGlpIiwiIiwiZGEiXQ==',
-        ],
-        'doTranslit': 'true',
+        'filterParams': 'WyLQotC+0LvRjNC60L4g0LIg0L3QsNC70LjRh9C40LgiLCItOSIsItCU0LAiXQ==',
     }
 
     response = requests.get('https://www.mvideo.ru/bff/products/listing', params=params, cookies=cookies, headers=headers).json()
